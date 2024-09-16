@@ -24,7 +24,7 @@ static class MyUncheckedException extends RuntimeException {
     @Test
     void unchecked_throw() {
         Service service = new Service();
-        assertThatThrownBy(() -> service.callThrow());
+        assertThatThrownBy(() -> service.callThrow()).isInstanceOf(MyUncheckedException.class);
     }
     /**
      * 체크 예외를 밖으로 던지는 코드
