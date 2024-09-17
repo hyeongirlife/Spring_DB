@@ -16,4 +16,7 @@ public class Member {
         this.memberId = memberId;
         this.money = money;
     }
+
+    public Member(String memberId) {
+    }
 }
